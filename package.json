@@ -1,0 +1,50 @@
+{
+  "name": "threat-intel-hub",
+  "version": "1.0.0",
+  "description": "Threat Intelligence Aggregation Platform — 7 integrated APIs",
+  "main": "main.js",
+  "author": "Threat Intel Hub",
+  "license": "MIT",
+  "scripts": {
+    "start":   "electron .",
+    "build":   "electron-builder --win --x64",
+    "build:portable": "electron-builder --win portable --x64"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "pdfkit":         "^0.14.0"
+  },
+  "devDependencies": {
+    "electron":         "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId":       "com.threatintelhub.desktop",
+    "productName": "Threat Intel Hub",
+    "copyright":   "© 2024 Threat Intel Hub",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": [
+        { "target": "nsis",     "arch": ["x64"] },
+        { "target": "portable", "arch": ["x64"] }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick":                      false,
+      "perMachine":                    false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut":         true,
+      "createStartMenuShortcut":       true,
+      "shortcutName":                  "Threat Intel Hub"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

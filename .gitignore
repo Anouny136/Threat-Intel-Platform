@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+out/
+
+# Electron store (local encrypted data — never commit)
+app-data/
+*.json.enc
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-error.log
+
+# Environment files (if you ever add one)
+.env
+.env.local
+
+# Temp
+*.tmp
+*.temp
