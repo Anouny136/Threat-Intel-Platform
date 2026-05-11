@@ -16,7 +16,7 @@
 - **5 IOC types** — IP, Domain, Hash, URL, Email (auto-detected)
 - **File analysis** — SHA-256 hashed locally, file never uploaded
 - **Professional PDF reports** — dark-themed, multi-page, color-coded
-- **OSINT Tools directory** — 37 curated tools across 8 categories with live search
+- **OSINT Tools directory** — curated tools across 8 categories with live search (coming soon)
 - **Encrypted API key storage** via `electron-store`
 - **Direct links** from each result card to the source website
 - **Zero CORS issues** — all API calls run in Node.js main process
@@ -25,25 +25,16 @@
 
 ## Integrated APIs
 
-### No key required (always active)
-| Source | Provides |
-|--------|----------|
-| **IPInfo** | Geolocation, ASN, org, hosting/VPS detection |
-| **BGPView** | ASN routing, CIDR prefix, country |
-
 ### Free tier available
 | Source | IOC Types | Free Limit |
 |--------|-----------|------------|
 | **VirusTotal** | IP, Domain, Hash, URL | 500 req/day |
 | **AbuseIPDB** | IP | 1,000 req/day |
 | **AlienVault OTX** | IP, Domain, Hash | Free forever |
-| **GreyNoise** | IP | 1,000 req/day |
 | **URLScan.io** | URL, Domain | Free tier |
 | **Hybrid Analysis** | Hash | Free tier |
 | **Maltiverse** | Hash | Free tier |
-| **SecurityTrails** | Domain, IP | 50 req/month |
-| **Censys** | IP, Domain | Free tier |
-| **HaveIBeenPwned** | Email | $3.50/month |
+
 
 ### Paid subscription required
 | Source | IOC Types | Cost |
@@ -97,13 +88,9 @@ Keys are stored encrypted on your local machine using `electron-store`.
 | VirusTotal | https://www.virustotal.com | Sign up → Profile → API Key |
 | AbuseIPDB | https://www.abuseipdb.com | Sign up → Account → API |
 | AlienVault OTX | https://otx.alienvault.com | Sign up → Settings → API Key |
-| GreyNoise | https://viz.greynoise.io | Sign up → Account → API |
 | URLScan.io | https://urlscan.io | Sign up → Settings → API Key |
 | Hybrid Analysis | https://hybrid-analysis.com | Sign up → Profile → API Key |
 | Maltiverse | https://maltiverse.com | Sign up → API Keys |
-| SecurityTrails | https://securitytrails.com | Sign up → API → Generate |
-| Censys | https://search.censys.io | Sign up → Account → API Access (get both ID and Secret) |
-| HaveIBeenPwned | https://haveibeenpwned.com/API/Key | Purchase API key ($3.50/month) |
 | Shodan | https://account.shodan.io | Purchase membership ($49/year) |
 
 ---
@@ -139,9 +126,9 @@ Type is auto-detected from the input. You can also force it from the dropdown.
 
 ---
 
-## OSINT Tools Directory
+## OSINT Tools Directory (coming soon)
 
-The **OSINT Tools** tab has 37 tools across 8 categories, searchable by name or description:
+The **OSINT Tools** tab has tools across 8 categories, searchable by name or description:
 
 | Category | Example Tools |
 |----------|---------------|
