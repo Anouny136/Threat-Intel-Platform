@@ -1,6 +1,6 @@
 # 🛡️ Threat Intel Hub
 
-> A professional desktop threat intelligence platform for Windows. Queries 13 APIs in parallel, aggregates results with visual analytics, and generates PDF reports — all from a single app.
+> A professional desktop threat intelligence platform for Windows. Queries 7 APIs in parallel, aggregates results with visual analytics, and generates PDF reports — all from a single app.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows-informational)
@@ -11,7 +11,7 @@
 
 ## Features
 
-- **13 integrated threat intelligence APIs** queried in parallel
+- **7 integrated threat intelligence APIs** queried in parallel
 - **Visual threat scoring** — donut chart, breakdown bars, verdict badge
 - **5 IOC types** — IP, Domain, Hash, URL, Email (auto-detected)
 - **File analysis** — SHA-256 hashed locally, file never uploaded
@@ -179,7 +179,7 @@ All API calls go through the Electron main process (Node.js) — no CORS, no pro
 ```
 renderer (UI)  →  preload.js (IPC bridge)  →  main.js (Node.js)
                                                     ↓
-                                            13 APIs, no CORS
+                                            7 APIs, no CORS
                                             PDFKit report engine
                                             Encrypted key storage
 ```
