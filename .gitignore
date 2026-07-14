@@ -5,9 +5,26 @@ node_modules/
 dist/
 out/
 
-# Electron store (local encrypted data — never commit)
+# Local API keys / app data — NEVER commit
 app-data/
 *.json.enc
+.tih-data.json
+tih-debug.log
+
+# Diagnostic + setup logs
+*-log.txt
+setup-log.txt
+repair-log.txt
+npm-debug.log*
+yarn-error.log
+
+# Backups
+*.orig.bak
+*.bak
+
+# Environment files
+.env
+.env.local
 
 # OS files
 .DS_Store
@@ -19,14 +36,6 @@ desktop.ini
 .idea/
 *.swp
 *.swo
-
-# Logs
-npm-debug.log*
-yarn-error.log
-
-# Environment files (if you ever add one)
-.env
-.env.local
 
 # Temp
 *.tmp

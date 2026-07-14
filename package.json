@@ -1,6 +1,6 @@
 {
   "name": "threat-intel-hub",
-  "version": "1.0.0",
+  "version": "7.0.0",
   "description": "Threat Intelligence Aggregation Platform — 7 integrated APIs",
   "main": "main.js",
   "author": "Threat Intel Hub",
