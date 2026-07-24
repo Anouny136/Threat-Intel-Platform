@@ -1,3 +1,9 @@
+
+<img width="1554" height="916" alt="Screenshot 2026-07-14 190016" src="https://github.com/user-attachments/assets/09a28dfb-81ae-4765-a0a4-1827a5633022" />
+<img width="1560" height="796" alt="Screenshot 2026-07-14 190224" src="https://github.com/user-attachments/assets/28ffd4ed-c025-493b-ab2f-9bccd221785f" />
+
+
+
 # 🛡️ Threat Intel Hub
 
 > Professional desktop threat intelligence platform for Windows. Queries multiple APIs in parallel, visualizes results with live threat scoring, and exports professional PDF reports — 100% local, no server required.
@@ -171,4 +177,4 @@ threat-intel-hub/
 │   └── renderer.js      ← UI logic, navigation, API routing
 ├── assets/
 │   └── icon.ico         ← App icon (replace with your own 256×256)
-�
+�
